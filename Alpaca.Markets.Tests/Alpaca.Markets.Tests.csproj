@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyOriginatorKeyFile>..\Alpaca.Markets.snk</AssemblyOriginatorKeyFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <SignAssembly>true</SignAssembly>
+    <WarningLevel>5</WarningLevel>
+    <IsPackable>false</IsPackable>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="AlpacaDataClientTest.*.cs">
+      <DependentUpon>AlpacaDataClientTest.cs</DependentUpon>
+    </Compile>
+    <Compile Update="AlpacaTradingClientTest.*.cs">
+      <DependentUpon>AlpacaTradingClientTest.cs</DependentUpon>
+    </Compile>
+    <Compile Update="AlpacaCryptoDataClientTest.*.cs">
+      <DependentUpon>AlpacaCryptoDataClientTest.cs</DependentUpon>
+    </Compile>
+    <Compile Update="AlpacaOptionsDataClientTest.*.cs">
+      <DependentUpon>AlpacaOptionsDataClientTest.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>
